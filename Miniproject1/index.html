@@ -15,33 +15,30 @@
   <body>
     <header>
       <!-- 네비게이션 -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
           <a class="navbar-brand" href="#">FutureTech</a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">특징</a>
+                <a class="nav-link" href="#features">특징</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">소개</a>
+                <a class="nav-link" href="#about">소개</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">고객후기</a>
+                <a class="nav-link" href="#testimonials">고객후기</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">문의하기</a>
+                <a class="nav-link" href="#contact">문의하기</a>
               </li>
             </ul>
           </div>
@@ -49,38 +46,42 @@
       </nav>
     </header>
     <!-- 히어로 섹션 -->
-    <section>
-      <div>
-        <h1>미래를 선도하는 혁신</h1>
-        <p>
+    <section class="hero text-center">
+      <div class="container">
+        <h1 class="display-2 mb-4">미래를 선도하는 혁신</h1>
+        <p class="lead mb-5">
           FutureTech와 함께 당신의 비즈니스를 혁신적인 기술로 업그레이드하세요.
         </p>
-        <a href="#">지금 시작하기</a>
+        <a href="#" class="btn btn-light btn-lg">지금 시작하기</a>
       </div>
     </section>
     <!-- 특징 섹션 -->
-    <section>
+    <section id="features" class="py-5">
       <div class="container">
-        <h2>왜 FutureTech인가?</h2>
+        <h2 class="text-center mb-5">왜 FutureTech인가?</h2>
         <div class="row">
-          <div class="box">
-            <div class="icon">🚀</div>
-            <h3>빠른 성장</h3>
-            <p>최첨단 기술로 당신의 비즈니스를 빠르게 성장시킵니다.</p>
+          <div class="col-md-4 mb-4">
+            <div class="text-center">
+              <div class="feature-icon">🚀</div>
+              <h3>빠른 성장</h3>
+              <p>최첨단 기술로 당신의 비즈니스를 빠르게 성장시킵니다.</p>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="box">
-            <div class="icon">💡</div>
-            <h3>혁신적인 솔루션</h3>
-            <p>AI와 빅데이터를 활용한 혁신적인 비즈니스 솔루션을 제공합니다.</p>
+          <div class="col-md-4 mb-4">
+            <div class="text-center">
+              <div class="feature-icon">💡</div>
+              <h3>혁신적인 솔루션</h3>
+              <p>
+                AI와 빅데이터를 활용한 혁신적인 비즈니스 솔루션을 제공합니다.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="box">
-            <div class="icon">🌍</div>
-            <h3>글로벌 확장</h3>
-            <p>국제 시장 진출을 위한 맞춤형 전략과 도구를 제공합니다.</p>
+          <div class="col-md-4 mb-4">
+            <div class="text-center">
+              <div class="feature-icon">🌍</div>
+              <h3>글로벌 확장</h3>
+              <p>국제 시장 진출을 위한 맞춤형 전략과 도구를 제공합니다.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -208,5 +209,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
